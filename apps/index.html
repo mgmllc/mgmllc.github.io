@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apps - MGM LLC</title>
+    <style>
+        :root {
+            --primary-color: #007aff;
+            --bg-color: #f5f5f7;
+            --card-bg: #ffffff;
+            --text-main: #1d1d1f;
+            --text-sub: #86868b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+
+        header {
+            max-width: 900px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        h1 { font-size: 32px; font-weight: 700; margin-bottom: 10px; }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .app-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 18%; /* iOSアイコン風の角丸 */
+            background: #eee;
+            margin-bottom: 16px;
+            object-fit: cover;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .app-name {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .app-description {
+            font-size: 14px;
+            color: var(--text-sub);
+            text-align: center;
+            margin-bottom: 20px;
+            min-height: 3em;
+        }
+
+        .store-buttons {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .store-button img {
+            height: 40px;
+            width: auto;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-sub);
+        }
+
+        @media (max-width: 480px) {
+            .store-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Developed Applications</h1>
+    <p style="color: var(--text-sub);">MGM LLC が提供するモバイルアプリケーション一覧</p>
+</header>
+
+<div class="container">
+    <div class="app-card">
+        <img src="/assets/icons/bj-icon.png" alt="Blackjack Icon" class="app-icon">
+        <div class="app-name">Blackjack Absolute Counter</div>
+        <div class="app-description">Blackjackの残りカード枚数と期待値を完璧に把握できるカウンティングアプリ</div>
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/app/id1534572559" class="store-button">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="Download on the App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.mgm.blackjackabsolutecounter" class="store-button">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <img src="/assets/icons/baby-food-icon.png" alt="Baby Food Icon" class="app-icon">
+        <div class="app-name">AI離乳食メーカー</div>
+        <div class="app-description">AIが赤ちゃんの月齢に合わせた最適なレシピを提案します。</div>
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/app/idYYYYYY" class="store-button">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="Download on the App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.noriget.aibabyfoodmaker" class="store-button">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <img src="/assets/icons/horse-racing-icon.png" alt="Horse Racing Icon" class="app-icon">
+        <div class="app-name">競馬血統診断アプリ</div>
+        <div class="app-description">独自の血統理論に基づき、レースの勝率をデータ分析。</div>
+        <div class="store-buttons">
+            <a href="https://apps.apple.com/app/idZZZZZZ" class="store-button">
+                <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/ja-jp?size=250x83" alt="Download on the App Store">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.mgm.aiKettouShindan" class="store-button">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/ja_badge_web_generic.png" alt="Get it on Google Play">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 MGM LLC. All rights reserved.
+</footer>
+
+</body>
+</html>
