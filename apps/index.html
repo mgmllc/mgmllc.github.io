@@ -104,6 +104,12 @@
             }
         }
 
+        nav { background: #fff; border-bottom: 1px solid #e5e5e7; padding: 12px 20px; margin: -40px -20px 40px; }
+        nav ul { list-style: none; display: flex; gap: 20px; padding: 0; margin: 0 auto; max-width: 900px; }
+        nav a { text-decoration: none; font-weight: bold; color: #86868b; }
+        nav a.active { color: #1d1d1f; }
+        nav a:hover { color: var(--primary-color); }
+
         /* 個別ラベル（ボタンと同じサイズ感に調整） */
         .store-status-placeholder {
             display: inline-flex;
@@ -134,6 +140,13 @@
     </style>
 </head>
 <body>
+
+<nav>
+    <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/apps/" class="active">APPS</a></li>
+    </ul>
+</nav>
 
 <header>
     <h1>Developed Applications</h1>
