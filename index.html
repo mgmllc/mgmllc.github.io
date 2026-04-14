@@ -1,3 +1,16 @@
+<header>
+    <nav>
+        <ul style="list-style: none; display: flex; gap: 20px; padding: 0;">
+            <li><a href="/" style="text-decoration: none; color: #333; font-weight: bold;">Home</a></li>
+            <li><a href="/apps/" style="text-decoration: none; color: #007aff; font-weight: bold;">Apps</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section style="text-align: center; padding: 60px 20px;">
+    <h2>MGM LLC のアプリケーション</h2>
+    <a href="/apps/" class="btn-apps">アプリ一覧を見る</a>
+</section>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +52,24 @@
         }
         .effective-date { font-weight: bold; color: #7f8c8d; }
         footer { margin-top: 50px; font-size: 0.9em; color: #95a5a6; text-align: center; }
+
+        .btn-apps {
+    display: inline-block;
+    background-color: #007aff;
+    color: #fff;
+    padding: 12px 32px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.2s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.btn-apps:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
     </style>
 </head>
 <body>
